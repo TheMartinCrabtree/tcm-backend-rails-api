@@ -1,4 +1,6 @@
 class Shoppingcartjoin < ApplicationRecord
   belongs_to :item
   belongs_to :shoppingcart
+
+  
 end
