@@ -1,6 +1,7 @@
 class ShoppingcartsController < ApplicationController
   before_action :set_shoppingcart, only: [:show, :update, :destroy]
 
+  
   # GET /shoppingcarts
   def index
     @shoppingcarts = Shoppingcart.all
@@ -37,6 +38,12 @@ class ShoppingcartsController < ApplicationController
   def destroy
     @shoppingcart.destroy
   end
+
+  # def contents
+  #   byebug
+
+  #   @contents = self.shoppincartjoins
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
